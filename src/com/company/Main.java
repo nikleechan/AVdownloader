@@ -53,7 +53,7 @@ public class Main {
             Document doc1 = null;
             System.out.println(downloaded);
             for(int i=1;i<=10;i++){
-                doc = Jsoup.connect("https://www.javbus.com/page/"+i).get();
+                doc = Jsoup.connect("https://www.gavbus.com/page/"+i).get();
                 Elements links = ((Element) doc).select("a[href]");
                 int b=0,ID=1234;
                 for(Element link : links){
